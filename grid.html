@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Lesson 11</title>
+</head>
+<style>
+.first-grid{
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+.second-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+.third-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.children{
+    background-color: pink;
+}
+.blue{
+    background-color: cyan;
+}
+.second-grid{
+    margin: 10px 0 10px 0;
+}
+</style>
+
+<body>
+    <div class="first-grid">
+       <div class="children blue">200px</div>
+       <div class="children">75px</div>
+    </div>
+    <div class="second-grid">
+        <div class="children blue">col1</div>
+        <div class="children">col2</div>
+        <div class="children blue">col3</div>
+    </div>
+    <div class="third-grid">
+        <div class="children">col1</div>
+        <div class="children">col2</div>
+        <div class="children">col3</div>
+        <div class="children">col4</div>
+        <div class="children">col1</div>
+        <div class="children">col2</div>
+        <div class="children">col3</div>
+        <div class="children">col4</div>
+    </div>
+</body>
+
+</html>
